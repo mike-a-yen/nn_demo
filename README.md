@@ -1,11 +1,11 @@
 # Neural Net Demo for TDI
-30 second introduction to ML with neural nets.
+This is a quick introduction to ML with neural nets.
 
-Comparision of tensorflow with keras.
+Take a look at the [slides](slides.pdf) and then try the [interactive notebook](mnist_demo.ipynb).
 
 <img src="simple_nn.png" width="300px">
 
-To install:
+# Installation
 
 ```
 #cpu install
