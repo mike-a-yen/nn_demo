@@ -1,4 +1,7 @@
 # Neural Networks made Easy
+[Interactive Notebook](../mnist_demo.ipynb) 
+
+[Slides](../slides.pdf)
 ### How to add Neural Nets to your Data Science Toolbox
 In many ways neural nets represent the future of machine learning because they can make more "intelligent" decisions than traditional learning algorithms. However the sophistication of these tools tend to make them seem too complicated and inaccessable by even season data scientists. This post will hopefully change your mind and show you that even deep neural nets can be implemented in a matter of minutes.
 
@@ -31,7 +34,7 @@ This is where `keras` comes in. The `keras` library is built on top of `Tensorfl
 
 <img src="../mnist_ex.png" width="300px">
 
-Included in this post is an `ipython notebook` with 3 neural networks using 2 different architectures aimed towards classifying hand written digits. The first 2 neural nets have the same architecture but are implemented first in `Tensorflow` and then in `keras`. These networks have the same behavior and very similar performance, but the `keras` network is developed in half the amount of code. 
+Included in this post is an [`ipython notebook`](../mnist_demo.ipynb) with 3 neural networks using 2 different architectures aimed towards classifying hand written digits. The first 2 neural nets have the same architecture but are implemented first in `Tensorflow` and then in `keras`. These networks have the same behavior and very similar performance, but the `keras` network is developed in half the amount of code. 
 
 The third network is an illustration of what can be developed in `keras` trading line for line with `Tensorflow`. In about 10 lines of code I built a convolutional neural network that approaches state of the art performance for `MNIST`.
 
