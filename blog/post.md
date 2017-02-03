@@ -1,7 +1,6 @@
 # Neural Networks made Easy
 [Interactive Notebook](../mnist_demo.ipynb) 
 
-[Slides](../slides.pdf)
 ### How to add Neural Nets to your Data Science Toolbox
 In many ways neural nets represent the future of machine learning because they can make more "intelligent" decisions than traditional learning algorithms. However the sophistication of these tools tend to make them seem too complicated and inaccessable by even season data scientists. This post will hopefully change your mind and show you that even deep neural nets can be implemented in a matter of minutes.
 
