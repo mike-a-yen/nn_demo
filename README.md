@@ -1,5 +1,5 @@
 # Neural Net Demo for TDI
-This is a quick introduction to ML with neural nets.
+This is a quick introduction to ML with neural nets. You can read more about how they work [here](blog/post.md)
 
 The Demo uses `Keras` which plugs into `tensorflow` but has a much lower
 development time and gives comparable results.
