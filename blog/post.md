@@ -21,14 +21,16 @@ By repetitively making combinations of combinations of the inputs a neural netwo
 
 There are many popular neural network libraries built for python, however the 2 that I will focus on here are `Tensorflow` and `keras`. 
 
-<img src="../nn_lib.png">
+<img src="../nn_libs.png" width="400px">
 
-`Tensorflow` is highly customizable and allows the user to get into the nitty gritty of the network's behavior. For example, you can change the way data is transferred between layers. This customizability comes at the cost of development time, and I usually find myself recycling many of the basic steps and for the neural network novice many of these steps can be seen as too much of a black box. 
+`Tensorflow` is highly customizable and allows the user to get into the nitty gritty of the network's behavior. For example, you can change the way data is transferred between layers, which can be useful for neural net experts. This customizability comes at the cost of development time, and I usually find myself recycling many of the basic steps and for the neural network novice many of these steps can be seen as too much of a black box. 
 
-This is where `keras` comes in. The `keras` library is built on top of `Tensorflow` and is using `Tensorflow`'s mechanics under the hood, but provides a very simple API that allows you to gloss over many of the canonical steps while building a neural network. This allows you to focus on refining the course grain details of your network while leaving many of the finer grain details to `keras`. 
+This is where `keras` comes in. The `keras` library is built on top of `Tensorflow` and is using `Tensorflow`'s mechanics under the hood, but provides a very simple API that allows you to gloss over many of the canonical steps while building a neural network. This allows you to focus on refining the course grain details of your network while leaving many of the finer grain details to `keras`. The benefit here is that you can build a really complex architecture in less than 10 lines of code.
 
 ### MNIST Example
 
-Included in this post is an `ipython notebook` with 3 neural networks using 2 different architectures aimed towards classifying hand written digist. The first 2 neural nets have the same architecture but are implemented first in Tensorflow and then in Keras. 
+Included in this post is an `ipython notebook` with 3 neural networks using 2 different architectures aimed towards classifying hand written digist. The first 2 neural nets have the same architecture but are implemented first in Tensorflow and then in Keras. These networks have the same behavior and very similar performance, but the `keras` network is developed in half the amount of code. 
+
+The third network is an illustration of what can be developed in `keras` trading line for line with `Tensorflow`. In about 10 lines of code I built a convolutional neural network that approaches state of the art performance for `MNIST`.
 
 
