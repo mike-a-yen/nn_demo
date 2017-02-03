@@ -29,6 +29,8 @@ This is where `keras` comes in. The `keras` library is built on top of `Tensorfl
 
 ### MNIST Example
 
+<img src="../mnist_ex.png" width="300px">
+
 Included in this post is an `ipython notebook` with 3 neural networks using 2 different architectures aimed towards classifying hand written digits. The first 2 neural nets have the same architecture but are implemented first in `Tensorflow` and then in `keras`. These networks have the same behavior and very similar performance, but the `keras` network is developed in half the amount of code. 
 
 The third network is an illustration of what can be developed in `keras` trading line for line with `Tensorflow`. In about 10 lines of code I built a convolutional neural network that approaches state of the art performance for `MNIST`.
