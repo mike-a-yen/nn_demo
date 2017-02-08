@@ -1,5 +1,5 @@
 # Neural Networks made Easy
-[Interactive Notebook](../mnist_demo.ipynb) 
+Follow along in the [interactive notebook](../mnist_demo.ipynb).
 
 ## How to add Neural Nets to your Data Science Toolbox
 In many ways neural nets represent the future of machine learning because they can make more "intelligent" decisions than traditional learning algorithms. However the sophistication of these tools tend to make them seem too complicated and inaccessable by even seasoned data scientists. This post will hopefully change your mind and show you that even deep neural nets can be implemented in a matter of minutes.
@@ -37,9 +37,9 @@ Included in this post is an [`ipython notebook`](../mnist_demo.ipynb) with 3 neu
 The third network is an illustration of what can be developed in `keras` trading line for line with `Tensorflow`. In about 10 lines of code I built a convolutional neural network that approaches state of the art performance for `MNIST`.
 
 ## What to do now
-Hopefully I have convinced you that neural networks can solve some really complicated problems while being easily accessible and fast to develop and test. If you haven't already, I would recommend working through the [interactive notebook](../mnist_demo.ipynb) to test out `tensorflow`, `keras` and to get a feel for what these algorithms are doing.
+Hopefully I have convinced you that neural networks can solve some really complicated problems while being easily accessible and fast to develop and test. Until recently I had put neural networks on a pedistal above all other machine learning algorithms, but now with `keras` training a neural net is as simple as training k-nearest neighboors or logistic regression. 
 
-[Explain more]
+If you haven't already, I would recommend working through the [interactive notebook](../mnist_demo.ipynb) to test out `tensorflow`, `keras` and to get a feel for both APIs.
 
 #### Authors: 
 Michael Yen
