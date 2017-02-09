@@ -23,11 +23,11 @@ There are many popular neural network libraries built for python, however the 2 
 
 <img src="../nn_libs.png" width="400px">
 
-`Tensorflow` is highly customizable and allows the user to get into the nitty gritty of the network's behavior. For example, you can change the way data is transferred between layers, which can be useful for neural net experts. This customizability comes at the cost of development time, and I usually find myself recycling many of the same basic steps, and for the neural network novice many of these steps can be too much of a hurdle. 
+`Tensorflow` is highly customizable and allows the user to get into the nitty gritty of the network's behavior. For example, you can change the way data is transferred between layers, which can be useful for neural net experts. This customizability comes at the cost of development time. I usually find myself recycling many of the same basic steps in all of my neural nets, so this much detail is not something I tend to need.
 
-This is where `keras` comes in. The `keras` library is built on top of `Tensorflow` and is using `Tensorflow`'s mechanics under the hood, but provides a very simple API that allows you to gloss over many of the canonical steps while building a neural network. This allows you to focus on refining the course grain details of your network while leaving many of the finer grain details to `keras`. The benefit here is that you can build a really complex architecture in less than 10 lines of code.
+This is where `keras` comes in. The `keras` library is built on top of `Tensorflow` and is using `Tensorflow`'s mechanics under the hood, but provides a very simple API that allows you to gloss over many of the standard steps while building a neural network. This allows you to focus on refining the course grain details of your network while leaving many of the finer grain details to `keras`. The benefit here is that you can build a complex architecture in less than 10 lines of code without having to be explicit about many of the common steps.
 
-As an additional bonus `keras` neural networks can be easily integrated with `scikit learn` and further treated like any other `scikit learn` machine learning algorithm.
+As an additional bonus `keras` neural networks can be easily integrated with `scikit learn` and further treated like any other `scikit learn` machine learning algorithm. This is one of my favorite things about `keras`.
 
 ## MNIST Example
 <img src="../mnist_ex.png" width="300px">
@@ -36,10 +36,13 @@ Included in this post is an [`ipython notebook`](../mnist_demo.ipynb) with 3 neu
 
 The third network is an illustration of what can be developed in `keras` trading line for line with `Tensorflow`. In about 10 lines of code I built a convolutional neural network that approaches state of the art performance for `MNIST`.
 
-## What to do now
-Hopefully I have convinced you that neural networks can solve some really complicated problems while being easily accessible and fast to develop and test. Until recently I had put neural networks on a pedistal above all other machine learning algorithms, but now with `keras` training a neural net is as simple as training k-nearest neighboors or logistic regression. 
+## What to do now?
+At this point I have given you a 10,000 ft view of how neural nets work and a quick introduction to how you can use them. Hopefully I have convinced you that neural networks can solve some really complicated problems while being easily accessible and fast to develop and test. Until recently I considered neural networks out of reach, but now with `keras` I use them just like any other machine learning model.
 
 If you haven't already, I would recommend working through the [interactive notebook](../mnist_demo.ipynb) to test out `tensorflow`, `keras` and to get a feel for both APIs.
+
+## What has been skipped?
+A lot. I have tried to convey that using neural nets can be simple, and in some cases they can be. However if you want to really understand neural networks and their behavior, you will need to get very deep into the math behind the algorithm. There are many different free online course, books, websites, etc. that do a great job of explaining the technical details.
 
 #### Authors: 
 Michael Yen
