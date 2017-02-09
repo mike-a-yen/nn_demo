@@ -5,11 +5,11 @@ Follow along in the [interactive notebook](../mnist_demo.ipynb).
 In many ways neural nets represent the future of machine learning because they can make more "intelligent" decisions than traditional learning algorithms. However the sophistication of these tools tend to make them seem too complicated and inaccessable by even seasoned data scientists. This post will hopefully change your mind and show you that even deep neural nets can be implemented in a matter of minutes.
 
 ## What is a neural net and what are those pictures?
-A neural net is a machine that takes some input and provides some output. Every neural net has an input layer and output layer, which can be separated by several "hidden" layers. These layers are called hidden because you can not directly observe what is going into or out of them. Some sophisticated neural nets will have several hidden layers which make them fall under the realm of deep learning. This picture shows a not-so-deep neural net with a single hidden layer.
+A neural net is a machine that takes some input and provides some output. Every neural net has an input layer and output layer, which can be separated by several "hidden" layers. These layers are called hidden because you can not directly observe what is going into or out of them. Some sophisticated neural nets will have several hidden layers which make them fall under the realm of deep learning. For a neural network to be considered "deep" it only needs 2 hidden layers. This picture shows a shallow neural net with a single hidden layer, so this arcitecture would not qualify as a deep learner.
 
 <img src="../nn_diagram.png" width="500px">
 
-These types of figures are used to illustrate the neural network's architecture which is ultimately responsible for the network's behavior and thus an important thing to think about when constructing your own neural network. 
+These types of figures are used to illustrate the neural network's architecture which is ultimately responsible for the network's behavior and thus an important thing to think about when constructing your own neural network. Choosing a good architecture is difficult and once a good one is identified, it is illustrated via one of these figures.
 
 ## What is a neural net doing?
 This is a common question and the answer is understandable by anyone. Just like any other machine learning algorithm neural networks take an input vector of features `x` and provide some kind of output `y`. 
