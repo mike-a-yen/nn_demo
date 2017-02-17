@@ -9,17 +9,17 @@ A neural net is a machine that takes some input and provides some output. Every 
 
 <img src="../nn_diagram.png" width="500px">
 
-These types of figures are used to illustrate the neural network's architecture which is ultimately responsible for the network's behavior and thus an important thing to think about when constructing your own neural network. Choosing a good architecture is difficult and once a good one is identified, it is illustrated via one of these figures.
+These figures are used to illustrate the neural network's architecture which is ultimately responsible for the network's behavior and thus an important thing to think about when constructing your own neural network. There are some loose heuristics for choosing a good architecture, but this is a skill that gets better with experience. Once a good architecture is identified it is illustrated via one of these figures so others can get a better understanding of your network. 
 
 ## What is a neural net doing?
-This is a common question and the answer is understandable by anyone. Just like any other machine learning algorithm neural networks take an input vector of features `x` and provide some kind of output `y`. 
+The answer can be explained in a mathematically intensive way or a hand-wavy way. For the purpose of this discussion we will choose the later. Just like any other machine learning algorithm neural networks take an input vector of features `x` and provide some kind of output `y`. 
 
-The magic behind neural nets is the way they move data between layers. Data is transfered by combining all of the outputs of the left layer in many different ways and sending each of these different combinations to one of the input nodes of the right layer. While training your neural net it will figure out how to combine the inputs to produce the best outputs. This combining operation is facilitated by matrix multiplication and is the foundation for all neural networks. 
+The magic behind neural nets is the way they move data between layers. Data is transfered by combining all of the outputs of the left layer in many different ways and sending each of these different combinations to one of the input nodes of the right layer. While training, your neural net will figure out how to combine the inputs to produce the best outputs. This combining operation is facilitated by matrix multiplication and is the foundation for all neural networks. 
 
 By repetitively making combinations of combinations of the inputs a neural network can figure out the higher level structures in the data. This principle is what makes neural networks so powerful. 
 
 ## How can I use a neural net?
-There are many popular neural network libraries built for python, however the 2 that I will focus on here are `Tensorflow` and `keras`. 
+There are many popular neural network libraries built for python, however the two that I will focus on here are `Tensorflow` and `keras`. 
 
 <img src="../nn_libs.png" width="400px">
 
@@ -32,17 +32,29 @@ As an additional bonus `keras` neural networks can be easily integrated with `sc
 ## MNIST Example
 <img src="../mnist_ex.png" width="300px">
 
-Included in this post is an [`ipython notebook`](../mnist_demo.ipynb) with 3 neural networks using 2 different architectures aimed towards classifying hand written digits. The first 2 neural nets have the same architecture but are implemented first in `Tensorflow` and then in `keras`. These networks have the same behavior and very similar performance, but the `keras` network is developed in half the amount of code. 
+Included in this post is an [`ipython notebook`](../mnist_demo.ipynb) with three neural networks using two different architectures aimed towards classifying hand written digits. The first two neural nets have the same architecture but are implemented first in `Tensorflow` and then in `keras`. These networks have the same behavior and very similar performance, but the `keras` network is developed in half the amount of code. 
 
 The third network is an illustration of what can be developed in `keras` trading line for line with `Tensorflow`. In about 10 lines of code I built a convolutional neural network that approaches state of the art performance for `MNIST`.
 
+## Limitations
+
+While neural nets can do some really cool things they do have their limitations. The largest I have noticed has been the vast amounts of data needed to train a decent model. Even small neural nets can have hundreds of thousands of weights to tune which is an impossible task to do properly with only a few thousand data points. 
+
+Another important limitation is interpretability. Once you have a lot of data and you have trained a good neural net there will be no way for you to figure out what your model is actually doing. This may be an important thing to consider, especially because other machine learning models have much better interpretability.
+
 ## What to do now?
-At this point I have given you a 10,000 ft view of how neural nets work and a quick introduction to how you can use them. Hopefully I have convinced you that neural networks can solve some really complicated problems while being easily accessible and fast to develop and test. Until recently I considered neural networks out of reach, but now with `keras` I use them just like any other machine learning model.
+At this point I have given you a 10,000 ft view of how neural nets work and a quick introduction to how you can use them. Hopefully I have convinced you that neural networks can solve some really complicated problems while being easily accessible and fast to develop and test. Until recently I considered neural networks out of reach, but now with `keras` I use them just like any other machine learning model. With that being said, due to their limitations, neural nets are not the first thing I try when starting a new problem.
 
 If you haven't already, I would recommend working through the [interactive notebook](../mnist_demo.ipynb) to test out `tensorflow`, `keras` and to get a feel for both APIs.
 
 ## What has been skipped?
 A lot. I have tried to convey that using neural nets can be simple, and in some cases they can be. However if you want to really understand neural networks and their behavior, you will need to get very deep into the math behind the algorithm. There are many different free online course, books, websites, etc. that do a great job of explaining the technical details.
 
+## Resources:
+[Tensorflow's Getting Started](https://www.tensorflow.org/get_started/get_started) is a great place to learn some more of the basic mechanics behind neural nets.
+
 #### Authors: 
 Michael Yen
+
+#### Special Thanks to:
+Paul Paczuski
